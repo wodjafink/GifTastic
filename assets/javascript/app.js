@@ -1,5 +1,7 @@
 var topics = ["burgers", "burritos", "chow mein", "sushi", "pizza"]
 
+
+
 function MakeGifButton(food){
     console.log("Adding " + food)
     var newButton = $('<button/>', {
@@ -14,6 +16,7 @@ function MakeGifButton(food){
             method: "GET"
           })
             .then(function(response){
+              $("#gifs-appear-here").empty();
               var results = response.data;
               for (var i=0; i<results.length;i++){
                 var gifDiv = $("<div class='item'>");
@@ -23,8 +26,16 @@ function MakeGifButton(food){
                 var p = $("<p>").text("Rating: " + rating);
 
                 var foodImage = $("<img>");
-                foodImage.attr("src", results[i].images.fixed_height.url);
+                foodImage.attr("src", results[i].images.fixed_height_still.url);
+                foodImage.attr("src2",results[i].images.fixed_height.url)
+                foodImage.on("click", function(){
+                  var temp = foodImage.attr("src");
+                  var temp2 = foodImage.attr("src2");
+                  foodImage.attr("src", temp2)
+                  foodImage.attr("src2",temp)
+                })
 
+                console.log(results[i].images)
                 gifDiv.prepend(p);
                 gifDiv.prepend(foodImage);
 
@@ -34,7 +45,6 @@ function MakeGifButton(food){
         }
       })
     newButton.text(food);
-    console.log(newButton)
     // newButton.append($("#food-buttons"))
     $("#food-buttons").append(newButton);
 }
