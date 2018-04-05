@@ -15,7 +15,7 @@ I've added a list of my favorite foods:
 
 * Chow Mein, gotta love those delicious chinese noodles
 
-![Noodle Dude](https://media1.giphy.com/media/hJAhtnP3PFoIM/giphy.gif)
+![Noodle Dude](https://media3.giphy.com/media/gjvuIhO73q8dW/giphy.gif)
 
 * Sushi, because, as David said in class, everyone loves sushi (except when it makes you sick)
 
