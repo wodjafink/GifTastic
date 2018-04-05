@@ -6,7 +6,9 @@ BCB HW6, Creating an image curator using Giphy
 I've added a list of my favorite foods:
 
 * Burgers, because who doesn't like a tasty burger!
+
 ![Samuel L Jackson Burger](https://media.giphy.com/media/3otPoz2V9lPlSH9pde/giphy.gif)
+
 * Burritos, the perfect food (Mine usually has Al Pastor in it)
 ![Taco Bell Burrito Lady](https://media2.giphy.com/media/HqExakjRbi7zG/giphy.gif)
 * Chow Mein, gotta love those delicious chinese noodles
