@@ -7,34 +7,32 @@
 
   <script src="https://code.jquery.com/jquery.js"></script>
   <script type="text/javascript" src="assets/javascript/app.js"></script>
-  <link rel="stylesheet" href="assets/css/reset.css">
+  <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 col-md-12">
+      <div class="col-lg-12 col-md-12 col-sm-12">
         <div id="food-buttons">
 
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-10 col-lg-10">  
+      <div class="col-md-10 col-lg-10 col-sm-10">  
         <div id="gifs-appear-here">
         </div>
       </div>
-      <div class="col-lg-2 col-md-2">
-
+      <div class="col-lg-2 col-md-2 col-sm-2">
         <form>
           <div class="form-group">
-            <label for="newFoodButton">Add some food</label>
-            <input type="email" class="form-control" id="newFoodButton">
+            <label for="bidder-price">Add your favorite food!</label>
+            <input class="form-control" id="bidder-price" type="text">
           </div>
-          <button type="submit" class="btn">Submit</button>
+          <button class="btn btn-primary" id="submit-bid" type="submit">Submit</button>
         </form>
-
       </div>
     </div>
   </div>
