@@ -10,12 +10,19 @@ I've added a list of my favorite foods:
 ![Samuel L Jackson Burger](https://media.giphy.com/media/3otPoz2V9lPlSH9pde/giphy.gif)
 
 * Burritos, the perfect food (Mine usually has Al Pastor in it)
+
 ![Taco Bell Burrito Lady](https://media2.giphy.com/media/HqExakjRbi7zG/giphy.gif)
+
 * Chow Mein, gotta love those delicious chinese noodles
+
 ![Noodle Dude](https://media1.giphy.com/media/hJAhtnP3PFoIM/giphy.gif)
+
 * Sushi, because, as David said in class, everyone loves sushi (except when it makes you sick)
+
 ![Sushi Fun](https://media0.giphy.com/media/lAqo6CnBmEeTS/200.gif)
+
 * Pizza.  Need I say more?
+
 ![Pizza Spaceship](https://media3.giphy.com/media/3oEdv62rCO3hBmvQUo/giphy.gif)
 
 Any time you press these given foods, you'll see a magical array of gifs appear!  But they require a click to play.  Click again to stop the madness!!
