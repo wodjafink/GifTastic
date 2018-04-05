@@ -50,10 +50,9 @@ function MakeGifButton(food){
                   console.log("Add to next row")
                   runningWidth = 0;
                   leftStyle = 0;
-                  // leftStyle = (i * widthOfImages) % (addingGifWidth);
                   rowIncrement++;
                 }
-                // topStyle = (Math.floor(i / numberAcross) + rowIncrement) * heightOfImages;
+
                 topStyle = rowIncrement * heightOfImages
 
                 runningWidth += addingGifWidth + 40;
@@ -67,12 +66,6 @@ function MakeGifButton(food){
                   'margin-bottom': '40px'
                 })
 
-                console.log("i " + i + " w " + addingGifWidth 
-                  + " runningWidth: " + runningWidth + " rowIncrement: " + rowIncrement
-                  + " top " + topStyle + " left " + leftStyle)
-
-
-
                 $("#gifs-appear-here").append(gifDiv);
               }
             })
@@ -85,16 +78,24 @@ function MakeGifButton(food){
     $("#food-buttons").append(newButton);
 }
 
-$(document).ready(function() { 
+function MakeGifButtons(){
+  $("#food-buttons").empty();
   topics.forEach(function(food){
     MakeGifButton(food);
   })
+}
+
+$(document).ready(function() { 
+
+  MakeGifButtons();
+
   //Corresponds to the form button only!
   $("#submit-bid").on("click", function(e) {
     e.preventDefault();
     var newFood = $("#bidder-price").val().trim();
     topics.push(newFood)
-    MakeGifButton(newFood)
+    // MakeGifButton(newFood)
+    MakeGifButtons();
   });
 
   var gifsAppearHere = $("#gifs-appear-here");
